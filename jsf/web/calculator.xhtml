@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Taschenrechner</title>
+</h:head>
+
+<h:body>
+    <h1>Taschenrechner</h1>
+    <p>1. Operand <h:inputText value="#{calculator.operandA}"/></p>
+    <p>2. Operand <h:inputText value="#{calculator.operandB}"/></p>
+    <p>Operation:
+        <h:selectOneRadio value="#{calculator.operator}">
+            <f:selectItem itemLabel="+" temValue="plus"/>
+            <f:selectItem itemLabel="-" temValue="minus"/>
+            <f:selectItem itemLabel="*" temValue="multiply"/>
+            <f:selectItem itemLabel="/" temValue="divide"/>
+        </h:selectOneRadio>
+    </p>
+    <p>
+        <h:commandButton value="Berechnen" action="#{calculator.compute}"/>
+    </p>
+</h:body>
+</html>
