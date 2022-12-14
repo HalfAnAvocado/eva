@@ -1,4 +1,4 @@
-package aufgabe_01;
+package com.marvin_elsen.eva.uebung_03.aufgabe_01;
 
 
 import java.io.IOException;

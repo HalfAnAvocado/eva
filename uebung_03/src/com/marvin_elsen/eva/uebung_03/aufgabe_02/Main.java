@@ -1,4 +1,4 @@
-package aufgabe_02;
+package com.marvin_elsen.eva.uebung_03.aufgabe_02;
 
 // When a socket is connected, receive and send will not perform any security checks on incoming and outgoing
 // packets, other than matching the packet's and the socket's address and port. On a send operation, if the packet's
